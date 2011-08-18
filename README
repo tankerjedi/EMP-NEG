@@ -1,6 +1,6 @@
 1) Prerequisite:
 
-	-GMP library
+	-GMP library: Use -lgmp flag when you compile
 
 2) Description
 
