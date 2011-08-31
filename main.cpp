@@ -19,6 +19,29 @@ mpf_init(ber[i]);
 mpf_set_str(ber[i],"1.1",10);
 mpf_init(arindex[i]);
 mpf_set_str(arindex[i],"1.1",10);
+
+mpf_init(zeta[i]);
+mpf_set_str(zeta[i],"0.7",10);
+mpf_init(munkasok[i]);
+mpf_set_str(munkasok[i],"20",10);
+}
+
+mpf_init(alfa);
+mpf_set_str(alfa,"3",10);
+mpf_init(beta);
+mpf_set_str(beta,"2",10);
+mpf_init(mu);
+mpf_set_str(mu,"0.6",10);
+mpf_init(sigma);
+mpf_set_str(sigma,"2",10);
+
+for(i=0;i<7;i++)
+{
+  for(j=0;j<7;j++)
+  {
+  mpf_init(tau[i][j]);
+  mpf_set_str(tau[i][j],"1",10);
+  }
 }
 
 mpf_init(ber1);
@@ -45,6 +68,17 @@ void fuggveny(mpf_t eredmeny, mpf_t a, mpf_t b)
 mpf_mul(eredmeny,a,b);
 }
 
+
+//Egyenletek
+
+void arindex_f(mpf_t eredmeny, mpf_t arindex_p [regiok_szama], mpf_t ber_p [regiok_szama] )
+{
+
+}
+;
+
+//Érték kiíratás
+
 void aktualis_ertek()
 {
 
@@ -58,3 +92,5 @@ gmp_printf("%d | %Ff | %Ff  |\n",i+1,ber[i],arindex[i]);
 
 printf("****************************************\n");
 }
+
+
