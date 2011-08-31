@@ -3,6 +3,7 @@
 #define regiok_szama 7
 
 int gmp_precision = 1 * 1024;
+int i = 0;
 
 mpf_t ber1, ber2, eredmeny;
 
@@ -17,3 +18,6 @@ void arindex_f(mpf_t eredmeny, mpf_t arindex_p [regiok_szama], mpf_t ber_p [regi
 
 void ber_f(mpf_t eredmeny, mpf_t arindex_p [regiok_szama], mpf_t ber_p [regiok_szama] );
 
+
+//A változók aktuális értéke
+void aktualis_ertek();
