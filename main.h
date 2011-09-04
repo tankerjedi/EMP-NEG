@@ -20,6 +20,18 @@ mpf_t munkasok [regiok_szama]; //régióban élő munkások
 
 mpf_t tau [regiok_szama][regiok_szama]; //távolság mátrix
 
+const char* tau_szoveg [regiok_szama][regiok_szama] = {
+{"tej","roka","nea","1234","111","ba1","as1"},
+{"anko1","janko1","1","1","1","1","1"},
+{"1","1","1","1","1","1","1"},
+{"1","1","virgács","1","1","1","1"},
+{"1","1","1","1","1","1","1"},
+{"1","1","1","1","1","1","1"},
+{"1","1","1","1","1","1","1"}
+}; //Adatok
+
+char jani [] = "drog";
+
 //Függvények
 
 void fuggveny(mpf_t eredmeny, mpf_t a, mpf_t b);

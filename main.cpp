@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <iostream>
 #include <gmp.h>
-#include <stdlib.h>
+#include <cstdlib>
+#include <string>
 
 #include "main.h"
 
@@ -40,7 +41,7 @@ for(i=0;i<7;i++)
   for(j=0;j<7;j++)
   {
   mpf_init(tau[i][j]);
-  mpf_set_str(tau[i][j],"1",10);
+  mpf_set_str(tau[i][j],tau_szoveg[i][j],10);
   }
 }
 
@@ -56,7 +57,7 @@ printf("Under Construction!!!\n");
 
 fuggveny(eredmeny,ber1,ber2);
 
-//gmp_printf("Az eredmény: %Ff\n",eredmeny);
+printf("Az eredmény: %s\n",tau_szoveg[0][1]);
 
 aktualis_ertek();
 
