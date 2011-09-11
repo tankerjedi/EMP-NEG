@@ -75,6 +75,17 @@ mpf_mul(eredmeny,a,b);
 void arindex_f(mpf_t eredmeny, mpf_t arindex_p [regiok_szama], mpf_t ber_p [regiok_szama] )
 {
 
+//Segédváltozók bevezetése
+mpf_t konstans;
+mpf_init(konstans);
+
+
+
+
+//Takarítás
+mpf_clear(konstans);
+
+
 }
 ;
 
